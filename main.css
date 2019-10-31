@@ -1,0 +1,33 @@
+header{
+    font-family: monospace;
+    background-color: blue; 
+    font-size: 20px; 
+}
+
+#logo{
+    font-size: 220%; 
+}
+
+body{
+    font-family: cursive; 
+    display: grid 1fr;
+}
+
+.nav     {grid-area: nav;}
+.radios  {grid-area: radio;}
+.buttons {grid-area: buttons;}
+.pictures {grid-area: pictures;}
+
+
+.wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    
+    grid-template-areas: 
+      "nav"
+      "radios"
+      "buttons"
+      "pictures"
+      
+}
