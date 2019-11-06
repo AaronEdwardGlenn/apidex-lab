@@ -4,8 +4,8 @@ class Header extends Component {
     renderHTML() {
         return /*html*/`
             <header>
-            <div id ='logo'>🎆</div>
-    <div id='intro'> This is the Pokedex! </div>
+            
+    <div id='intro'> <span id='logo'>🐙</span>This is the Pokedex! </div>
     <div class = 'main-head'>
     <div class = 'nav'>
         <select>

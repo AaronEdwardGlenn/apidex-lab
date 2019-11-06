@@ -8,10 +8,10 @@ class PokemonItem extends Component {
             <li class="pokemon-item">
                 <div class="pokemon-name">
                 <h2>${pokemon.name}</h2>
-                <p class = 'pokemon-attack'>${pokemon.attack}</p>
-                <p class = 'pokemon-defense'>${pokemon.defense}</p>
-                <p class = 'pokemon-type'>${pokemon.pokebase}</p>
-                <p class = 'pokemon-ability'>${pokemon.ability_1}</p>
+                <p class = 'pokemon-type'>Egg Group: ${pokemon.egg_group_1}</p>
+                <p class = 'pokemon-attack'>Attack: ${pokemon.attack}</p>
+                <p class = 'pokemon-defense'>Defense: ${pokemon.defense}</p>
+                <p class = 'pokemon-ability'>Ability: ${pokemon.ability_1}</p>
             </div>
             <div class = 'image-container'>
                 <img src = '${pokemon.url_image}'>
