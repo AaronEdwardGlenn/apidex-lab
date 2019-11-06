@@ -67,9 +67,9 @@ nav ul {text-align: center;}
         "nav    content sidebar"
         "nav    content ad"
         "footer footer  footer"
-     }
-     nav ul {
-       flex-direction: column;
-       text-align: left;
-     }
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: left;
+    }
 }
