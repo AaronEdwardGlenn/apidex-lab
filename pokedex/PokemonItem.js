@@ -5,8 +5,8 @@ class PokemonItem extends Component {
         const pokemon = this.props.pokemon;
 
         return /*html*/`
-            <li class="pokemon-item">
-                <div class="pokemon-name">
+            <li class="pokemon-item" style = "background-color: ${pokemon.color_1}">
+                <div class="pokemon-name" >
                 <h2>${pokemon.name}</h2>
                 <p class = 'pokemon-type'>Egg Group: ${pokemon.egg_group_1}</p>
                 <p class = 'pokemon-attack'>Attack: ${pokemon.attack}</p>
