@@ -55,7 +55,7 @@
     object-fit: contain;
     max-width: 100vw;
     display: grid 1fr;
-    padding: 5px;
+    ;
 
   } 
   
@@ -309,8 +309,8 @@ body{
   text-align: center;
 
 
-  border: 2px double rgb(155, 255, 73);
-
+  border: px double rgb(155, 255, 73);
+  border-radius: 10%;
   margin-top: 0px;
   margin-right: 15px;
   margin-bottom: 15px;
