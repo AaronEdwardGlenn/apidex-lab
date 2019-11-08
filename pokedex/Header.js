@@ -1,23 +1,16 @@
 import Component from '../Component.js';
 
+
+
 class Header extends Component {
     renderHTML() {
         return /*html*/`
             <header>
-            <div id ='logo'>🎆</div>
-    <div id='intro'> This is the Pokedex! </div>
-    <div class = 'main-head'>
-    <div class = 'nav'>
-        <select>
-            <option value ='name'>Pokemon name</option>
-            <option value ='type'>Type</option>
-            <option value ='attack'>Attack</option>
-            <option value ='defence'>Defence</option>
-            <option value ='eggGroups'>eggGroups</option>
-        </select>
-        </div>
+            <nav><a href="../index.html">__HOME__</a> <nav>    
+    <div id='intro'>This is the Pokedex! 
+      
     </div>
-
+ 
 <div class = 'searches'>
     <input value='search bar'>
     <button id= 'search-bar' value='search-button'>search!</button>
@@ -32,6 +25,7 @@ class Header extends Component {
     <div>
     <input type="radio" name="radio1" value="type2">Slow pokemans
     </div>
+    
 </div>
             </header>
         `;

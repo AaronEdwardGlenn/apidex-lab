@@ -2,7 +2,7 @@
 @media (min-width: 300px){
   html{
       margin: 0px; 
-      display: flex; 
+      display: grid 1fr;
       max-width: auto; 
       justify-content: center;
       width: 100vw; 
@@ -11,8 +11,15 @@
       body{
           background-color: red; 
       }
+
+      header{
+        width: 100vw; 
+        display: grid 1fr;  
+      }
   
-  
+  .options-section{
+    background: red; 
+  }
   .intro{
       text-align: center;
   }
@@ -28,11 +35,29 @@
   
   }
   
-  
-  .content img{
-  max-width: 100vw;
+  .pokemon-type-filter{
+    background: white;
+    text-align: end;
+    font-size: 18px;
   }
   
+  .images{
+  margin: 0;
+  padding: 0; 
+  }
+  
+  .image-container {
+    max-width: 100vw;
+
+  }
+  
+  .image-container img {
+    object-fit: contain;
+    max-width: 100vw;
+    display: grid 1fr;
+    ;
+
+  } 
   
   .content > div{
       background-color: black; 
@@ -77,10 +102,188 @@
   }
   
 
+* {
+  box-sizing: border-box;
+}
+
 
 #intro{
   background-color: black; 
 }
+
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  color: white; 
+  
+}
+
+
+
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100vw;
+ 
+  border: 4px double rgb(155, 255, 73);
+
+ margin-bottom: 5px;
+}
+
+
+
+
+main{
+  background-color: rgb(81, 49, 171); 
+}
+
+
+h1{
+  color: white; 
+}
+
+
+#logo{
+  font-size: 110%; 
+  padding: 5px; 
+  margin-right: 20px; 
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+@media (min-width: 800px){
+  html{
+      margin: 0px; 
+      display: flex; 
+      max-width: auto; 
+      justify-content: center;
+      width: 100vw; 
+  
+  }
+      body{
+          background-color: rgb(137, 103, 228); 
+      }
+  
+  nav{
+    text-align: right;
+    
+  }
+  .intro{
+      text-align: center;
+  }
+  
+  #logo{
+      font-size: 100%; 
+      margin-right: 10px; 
+  }
+  
+  .content{
+      display: grid;
+      grid-gap: 10px; 
+  
+  }
+  
+  
+  .content img{
+  max-width: 100vw;
+  }
+  
+  
+  .content > div{
+      background-color: black; 
+  }
+  
+  
+  .main-head{
+      display: flex; 
+      background-color: black; 
+      font-size: 20px; 
+      text-align: left;
+      margin-right: 5px; 
+  
+  }
+  
+  .main-head > .nav select {
+      width: 280px;
+      font-size: 15px; 
+      background-color: white; 
+      margin: 5px;
+  }
+  
+  .searches{
+      display: grid; 
+      grid-template-columns: 3fr 1fr;
+      background-color: blue; 
+      padding: 10px; 
+      grid-gap: 10px; 
+  }
+
+  button{
+      background-color: white; 
+  }
+  
+  .radios{
+      background-color: red;
+      padding: 10px; 
+      margin-bottom: 10px; 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+  }
+  
+  .options-section{
+    background: none; 
+  }
+* {
+  box-sizing: border-box;
+}
+
+
+#intro{
+  background-image: url('https://media0.giphy.com/media/W04QVzelTHsNW/source.gif');
+  font-family: cursive; 
+  font-size: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
 
 
 body{
@@ -98,18 +301,19 @@ body{
 .images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .images li {
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: space-between;
   text-align: center;
 
-  min-width: 200px;
-  border: 2px double rgb(155, 255, 73);
 
+  border: px double rgb(155, 255, 73);
+  border-radius: 10%;
   margin-top: 0px;
   margin-right: 15px;
   margin-bottom: 15px;
@@ -119,7 +323,7 @@ body{
 
 
 .image-container {
-  height: 50%;
+  height: 100%;
 }
 
 .image-container img {
@@ -149,8 +353,8 @@ h1{
 
 
 section {
-  margin: 20px auto;
-  width: 90%;
-  min-width: 650px;
+  margin: 20px;
+  width: 100%;
+  
 }
 }
