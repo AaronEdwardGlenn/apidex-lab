@@ -10,55 +10,12 @@ import SearchOptions from './SearchOptions.js';
 
 class App extends Component {
 
-    // onRender(dom) {
-    //     const header = new Header({
-    //         person: 'Aaron',
-    //     });
-    //     const headerDOM = header.renderDOM();
-    //     dom.prepend(headerDOM); 
-
-    //     const props = {
-    //         pokemons: pokemons
-    //     };
-
-    //     const pokemonList = new PokemonList(props);
-    //     const imageListDOM = pokemonList.renderDOM();
-
-    //     const listSection = dom.querySelector('.list-section');
-    //     listSection.appendChild(imageListDOM);
-
-
-    //     const filterPokemons = new FilterPokemons({
-    //         pokemons: pokemons,
-    //         onFilter: (pokemonKeywork) => {
-    //             let filteredPokemon;
-    //             if (!pokemonKeywork) {
-    //                 filteredPokemon = pokemons;
-    //             }
-    //             else {
-    //                 filteredPokemon = pokemons.filter(pokemon => {
-    //                     return pokemon.keyword === pokemonKeywork;
-    //                 });
-    //             }
-
-    //             const updateProps = { images: filteredPokemon };
-    //             pokemonList.update(updateProps);
-    //         }
-    //     });
-
-    //     const filterPokemonDOM = filterPokemons.renderDOM();
-
-    //     const optionsSection = dom.querySelector('.options-section');
-    //     optionsSection.appendChild(filterPokemonDOM);
-
-    // }
-
     async onRender(dom) {
         const header = new Header();
         dom.prepend(header.renderDOM());
 
         const optionsSection = dom.querySelector('.options-section');
-        
+
         const searchOptions = new SearchOptions();
         optionsSection.prepend(searchOptions.renderDOM());
 

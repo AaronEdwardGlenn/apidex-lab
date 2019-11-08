@@ -201,7 +201,10 @@ h1{
           background-color: rgb(137, 103, 228); 
       }
   
-  
+  nav{
+    text-align: right;
+    
+  }
   .intro{
       text-align: center;
   }

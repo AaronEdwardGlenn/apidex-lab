@@ -1,11 +1,15 @@
 import Component from '../Component.js';
 
+
+
 class Header extends Component {
     renderHTML() {
         return /*html*/`
             <header>
-            
-    <div id='intro'>This is the Pokedex! </div>
+            <nav><a href="../index.html">__HOME__</a> <nav>    
+    <div id='intro'>This is the Pokedex! 
+      
+    </div>
  
 <div class = 'searches'>
     <input value='search bar'>
