@@ -24,5 +24,6 @@ app.get('/data', (request, response) => {
 });
 
 app.listen(PORT, () => {
+    // eslint-disable-next-line no-console
     console.log(`Listening on port ${PORT}`);
 });
