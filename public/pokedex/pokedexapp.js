@@ -1,9 +1,11 @@
 import Component from '../Component.js';
-import PokemonList from './PokemonList.js.js'; 
-import Header from './Header.js.js';
-import Paging from './Paging.js.js';
-import { getPokemon } from '../services/pokedex-api.js.js';
-import SearchOptions from './SearchOptions.js.js';
+
+import PokemonList from './PokemonList.js'; 
+import Header from './Header.js';
+import Paging from './Paging.js';
+import { getPokemon } from '../services/pokedex-api.js';
+import SearchOptions from './SearchOptions.js';
+
 
 
 class App extends Component {

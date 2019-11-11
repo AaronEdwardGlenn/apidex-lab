@@ -1,4 +1,7 @@
-import Component from '../public/Component.js/index.js';
+
+import Component from '../Component.js';
+
+
 
 
 
