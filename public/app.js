@@ -1,4 +1,5 @@
 import Header from './pokedex/Header.js';
+
 import Component from './Component.js';
 
 class Cool extends Component{

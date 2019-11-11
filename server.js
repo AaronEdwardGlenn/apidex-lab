@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.static('./public'));
 
+
 app.use('*', (request, response) => {
     response.send('Sorry, that route does not exist.');
 });
@@ -25,4 +26,3 @@ app.get('/data', (request, response) => {
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
-});
