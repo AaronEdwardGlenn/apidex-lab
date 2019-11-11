@@ -6,11 +6,11 @@ class Header extends Component {
     renderHTML() {
         return /*html*/`
             <header>
-            <nav><a href="../index.html">__HOME__</a> <nav>    
+            <nav><a href="../index.html">__HOME__</a> <a href="../explore.html">__POKEDEX__</a> <nav>    
     <div id='intro'>This is the Pokedex! 
       
     </div>
- 
+<!--  
 <div class = 'searches'>
     <input value='search bar'>
     <button id= 'search-bar' value='search-button'>search!</button>
@@ -26,7 +26,7 @@ class Header extends Component {
     <input type="radio" name="radio1" value="type2">Slow pokemans
     </div>
     
-</div>
+</div> -->
             </header>
         `;
     }

@@ -5,20 +5,23 @@ class PokemonList extends Component {
 
     
     onRender(dom) {
-        const { pokemon } = this.props;
+        const pokemon = this.props.pokemon;
 
-        pokemon.forEach(pokemon => {
-            const pokemonItem = new PokemonItem({ pokemon });
+        pokemon.forEach(pokes => {
+            const props = { pokes };
+            const pokemonItem = new PokemonItem(props);
             const pokemonItemDOM = pokemonItem.renderDOM();
             dom.appendChild(pokemonItemDOM);
         });
+
     }
     renderHTML() {
+        
         return /*html*/`
-            <ul class="images"></ul>
+            <ul class="pokemons"></ul>
         `;
     }
-
 }
+
 
 export default PokemonList;

@@ -2,6 +2,7 @@ body{
     background-image: url('https://media2.giphy.com/media/10LKovKon8DENq/giphy.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: top; 
 }
 
 .main-head{

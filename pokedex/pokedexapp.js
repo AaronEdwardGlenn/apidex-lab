@@ -1,7 +1,5 @@
 import Component from '../Component.js';
-// import pokemons from '../data/pokemons.js'; 
 import PokemonList from './PokemonList.js'; 
-// import FilterPokemons from './FilterPokemons.js';
 import Header from './Header.js';
 import Paging from './Paging.js';
 import { getPokemon } from '../services/pokedex-api.js';
@@ -10,27 +8,35 @@ import SearchOptions from './SearchOptions.js';
 
 class App extends Component {
 
+    
     async onRender(dom) {
         const header = new Header();
         dom.prepend(header.renderDOM());
 
-        const optionsSection = dom.querySelector('.options-section');
-
+        const searchSection = dom.querySelector('.list-section');
         const searchOptions = new SearchOptions();
-        optionsSection.prepend(searchOptions.renderDOM());
+        searchSection.prepend(searchOptions.renderDOM());
 
-        const listSection = dom.querySelector('.list-section');
-
-        const paging = new Paging();
+        const listSection = dom.querySelector('.images');
+        const paging = new Paging({ totalResults: 0 });
         listSection.appendChild(paging.renderDOM());
 
         const pokemonList = new PokemonList({ pokemon: [] });
         listSection.appendChild(pokemonList.renderDOM());
 
-        const pokemon = await getPokemon();
-        const results = pokemon.results;
+        async function loadPokemon() {
+            const response = await getPokemon();
+            const pokemon = response.results;
+            const totalResults = response.count;
+            pokemonList.update({ pokemon: pokemon });
+            paging.update({ totalResults: totalResults });
+        }
 
-        pokemonList.update({ pokemon: results });
+        loadPokemon();
+
+        window.addEventListener('hashchange', () => {
+            loadPokemon();
+        });
     }
 
     renderHTML() {
@@ -43,6 +49,8 @@ class App extends Component {
                     <section class="list-section"> 
                         
                     </section>
+                    <ul class="images">
+            </ul>
                 </main>
             </div>
         `;
