@@ -1,0 +1,43 @@
+body{
+    background-image: url('https://media2.giphy.com/media/10LKovKon8DENq/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top; 
+}
+
+.main-head{
+    display: flex; 
+    background-color: black; 
+    font-size: 20px; 
+    text-align: left;
+    margin-right: 5px; 
+
+}
+
+.main-head > .nav select {
+    width: 280px;
+    font-size: 15px; 
+    background-color: white; 
+    margin: 5px;
+}
+
+.searches{
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+    background-color: blue; 
+    padding: 10px; 
+    grid-gap: 10px; 
+}
+
+button{
+    background-color: white; 
+}
+
+.radios{
+    background-color: red;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
