@@ -68,7 +68,8 @@ class Paging extends Component {
         const lastPage = Math.ceil(totalResults / perPage);
         const start = (page * perPage) - (perPage - 1, totalResults);
         const end = Math.min(start + perPage - 1, totalResults);
-    
+        // eslint-disable-next-line no-console
+        console.log(end); 
 
         return /*html*/`
             <p class="paging-section">
