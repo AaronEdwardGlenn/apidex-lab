@@ -8,5 +8,5 @@ app.use(express.static('./public'));
 
 
 app.listen(PORT, () => {
-    console.log('Listening');
+    console.log('Listening', PORT);
 });
