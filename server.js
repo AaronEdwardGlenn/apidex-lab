@@ -23,7 +23,8 @@ app.get('/data', (request, response) => {
     response.status(200).json(airplanes);
 });
 
+
 app.listen(PORT, () => {
     // eslint-disable-next-line no-console
-    console.log(`Listening on port ${PORT}`);
+    console.log(`Listening on port ${PORT}`, 'xxx');
 });
